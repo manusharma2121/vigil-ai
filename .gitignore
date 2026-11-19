@@ -1,0 +1,55 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+# Note: frontend/dist/ is INCLUDED (not ignored) so Railway can serve it
+# dist/   <-- do NOT ignore dist globally
+build/
+.eggs/
+
+# ── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+# ── Environment files ────────────────────────────────────────────────────────
+.env
+*.env.local
+
+# ── Database ─────────────────────────────────────────────────────────────────
+backend/vigil.db
+
+# ── Uploads (user videos - do not commit) ───────────────────────────────────
+backend/uploads/*.mp4
+backend/uploads/*.avi
+backend/uploads/*.mov
+
+# ── Datasets (large files, not needed for deployment) ────────────────────────
+datasets/
+
+# ── Node.js ──────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── IDE ──────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+
+# ── Keep model weights (tracked via git) ────────────────────────────────────
+# models/weights/vigil_model.pth  <-- DO include this
+# models/weights/flow_classifier.pkl  <-- DO include this
